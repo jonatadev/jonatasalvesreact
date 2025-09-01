@@ -25,6 +25,7 @@ Projeto pessoal desenvolvido em React, TypeScript e Vite.
 ├── README.md         # Este arquivo
 ```
 
+
 ## Instalação e Uso
 
 1. Instale as dependências:
@@ -47,6 +48,21 @@ Projeto pessoal desenvolvido em React, TypeScript e Vite.
   npm run preview
   ```
 
+## Principais comandos npm
+
+| Comando            | Descrição                                 |
+|--------------------|-------------------------------------------|
+| npm install        | Instala todas as dependências do projeto  |
+| npm run dev        | Inicia o servidor de desenvolvimento      |
+| npm run build      | Gera o build de produção                  |
+| npm run preview    | Visualiza o build gerado                  |
+| npm run lint       | Executa o ESLint para análise de código   |
+
+Para rodar o lint:
+```bash
+npm run lint
+```
+
 ## Principais Dependências
 - React
 - TypeScript
@@ -54,14 +70,6 @@ Projeto pessoal desenvolvido em React, TypeScript e Vite.
 - Material UI
 - react-i18next
 - ESLint
-
-## Como contribuir
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b minha-feature`)
-3. Commit suas alterações (`git commit -m 'Minha feature'`)
-4. Faça push para a branch (`git push origin minha-feature`)
-5. Abra um Pull Request
 
 ---
 Desenvolvido por [jonatadev](https://github.com/jonatadev)
