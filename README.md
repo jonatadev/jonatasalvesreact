@@ -96,13 +96,14 @@ npm cache clean --force
 npm install
 ```
 
+
 ## Principais Dependências
-- React
-- TypeScript
-- Vite
-- Material UI
-- react-i18next
-- ESLint
+- [React](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org)
+- [Vite](https://vitejs.dev)
+- [Material UI](https://mui.com)
+- [react-i18next](https://react.i18next.com)
+- [ESLint](https://eslint.org)
 
 ---
 Desenvolvido por [jonatadev](https://github.com/jonatadev)
