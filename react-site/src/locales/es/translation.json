@@ -1,0 +1,22 @@
+{
+  "navbar": {
+    "about": "Acerca de",
+    "articles": "Artículos",
+    "books": "Libros",
+    "personal": "Personal"
+  },
+  "footer": {
+    "designed": "Desarrollado con cariño por Jonatas Alves.",
+  "powered": "Hecho con React y Vite."
+  },
+  "books": {
+    "title": "Libros",
+    "intro": "Una selección de libros que recomiendo para quien quiera crecer en tecnología.",
+    "technical": "Libros técnicos",
+    "personal": "Crecimiento personal"
+  },
+  "about": {
+    "title": "Acerca de",
+    "description": "Hola, soy Jonatas Alves da Silva, un desarrollador backend con más de tres años de experiencia en el sector financiero. Me especializo en Java, Spring Framework, AWS y Go, con una sólida base en estructuras de datos y análisis de algoritmos.\n\nDisfruto construir aplicaciones escalables, resilientes y de alto rendimiento, siempre enfocándome en una arquitectura limpia y código mantenible. Recientemente, también he estado trabajando con infraestructura en la nube (Terraform, Azure, AWS) y prácticas modernas de desarrollo como CI/CD, contenedores y observabilidad.\n\nMás allá de la tecnología, me apasiona el aprendizaje continuo. Estudio temas como Teoría de Números, sistemas distribuidos y la intersección entre Física y Ciencias de la Computación. También me estoy preparando para exámenes de administración pública, lo que me desafía a expandir mi conocimiento en derecho constitucional, administrativo y civil.\n\nCreo en la persistencia, la disciplina y la curiosidad como las fuerzas impulsoras detrás del crecimiento profesional y los logros personales."
+  }
+}

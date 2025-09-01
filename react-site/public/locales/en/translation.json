@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "about": "About",
+    "articles": "Articles",
+    "books": "Books",
+    "personal": "Personal"
+  },
+  "footer": {
+    "designed": "Designed and built with love by Jonatas Alves.",
+    "powered": "Powered by Bootstrap and GitHub Pages."
+  },
+  "books": {
+    "title": "Books",
+    "intro": "Here are some books I recommend or have enjoyed reading:"
+  },
+  "about": {
+    "title": "About",
+    "description": "I am a Computer Science student at the State University of Maringá. Currently I work as a Java developer at Fintech. My main areas of interest are Computer Graphics and Machine Learning. During my free time I like to learn new things, read a good book, watch a series, go out with friends and meet interesting people. I also play some games when I have idle time on weekends."
+  }
+}

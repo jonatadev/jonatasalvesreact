@@ -8,20 +8,16 @@
     <link href="css/Bootstrap v4.3.1.min.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <style>
-      body {
-            font-family: 'Roboto Mono', monospace;
-      }
-    </style>            
+  <link href="css/responsive-style.css" rel="stylesheet" type="text/css"/>
   </head>
 
   <body id="my-page" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <div class="jumbotron text-center ">
-      <h1>Jonatas Alves</h1>
-      <h3>Passionate About Software Development</h3>
+  <div class="jumbotron text-center container-fluid mb-3">
+  <h1>Jonatas Alves</h1>
+  <h3>Passionate About Software Development</h3>
       <h6>Find me on social media.</h6>
-      <ul class="nav list-inline justify-content-center">
+  <ul class="nav list-inline justify-content-center flex-wrap">
         <li><a href="https://www.linkedin.com/in/jonatasdev/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" width="48" height="48"></a></li>      
         <li><a href="https://github.com/jonatadev" target="_blank"><img src="img/github.png" alt="GitHub" width="48" height="48"></a></li>       
         <li><a href="https://twitter.com/jonatadev" target="_blank"><img src="img/twitter.png" alt="Twitter" width="48" height="48"></a></li>          
@@ -31,16 +27,22 @@
     </div>
     
     <!-- menu -->
-    <nav class="navbar navbar-light  bg-light justify-content-center">
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-       
-      </ul>
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-3">
+      <a class="navbar-brand" href="#">Jonatas Alves</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About</a>
+            <a class="nav-link" href="#books">Books</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-       
-    <div id="aboutme" class="container">
+
+    <div id="aboutme" class="container mb-4">
       <h1>About</h1>
       <p>
         I am a Computer Science student at the <a href="http://www.cpr.uem.br/international/index.php/en/" target="_blank">State University of Maringá</a>.
@@ -51,10 +53,21 @@
         Interesting people. I also play some games when I have idle time.
         on weekends.
       </p>
-      
+    </div>
+
+    <div id="books" class="container mb-4">
+      <h1>Books</h1>
+      <p>Here are some books I recommend or have enjoyed reading:</p>
+      <ul>
+        <li>Clean Code, Robert C. Martin</li>
+        <li>The Pragmatic Programmer, Andrew Hunt & David Thomas</li>
+        <li>Design Patterns, Erich Gamma et al.</li>
+        <li>Deep Work, Cal Newport</li>
+        <li>Thinking, Fast and Slow, Daniel Kahneman</li>
+      </ul>
     </div>
     
-    <footer class="jumbotron text-center">
+  <footer class="jumbotron text-center container-fluid mt-4 mb-0">
       <p>Designed and built with love by Jonatas Alves.</p>
       <p>Powered by <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> 
          and <a href="https://pages.github.com/" target="_blank">GitHub Pages.</a> </p>
