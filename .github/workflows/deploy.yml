@@ -15,12 +15,14 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
       - name: Remove GitHub Actions cache
         uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-npm-cache-remove-${{ github.run_id }}
-  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
