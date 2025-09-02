@@ -30,20 +30,28 @@ function DocumentTitleUpdater() {
   return null;
 }
 
-const App: React.FC = () => (
-  <Router basename={import.meta.env.BASE_URL}>
-    <CssBaseline />
-    <DocumentTitleUpdater />
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<About />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/books" element={<Books />} />
-      <Route path="/personal" element={<Personal />} />
-    </Routes>
-    <Footer />
-  </Router>
-);
+const App: React.FC = () => {
+  useEffect(() => {
+    if (window.location.search.includes('fbclid')) {
+      const url = window.location.origin + window.location.pathname;
+      window.history.replaceState({}, document.title, url);
+    }
+  }, []);
+  return (
+    <Router basename={import.meta.env.BASE_URL}>
+      <CssBaseline />
+      <DocumentTitleUpdater />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/books" element={<Books />} />
+        <Route path="/personal" element={<Personal />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+};
 
 export default App;
