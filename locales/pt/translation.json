@@ -1,0 +1,20 @@
+{
+  "navbar": {
+    "about": "Sobre",
+    "articles": "Artigos",
+    "books": "Livros",
+    "personal": "Pessoal"
+  },
+  "footer": {
+    "designed": "Desenvolvido com carinho por Jonatas Alves.",
+    "powered": "Feito com Bootstrap e GitHub Pages."
+  },
+  "books": {
+    "title": "Livros",
+    "intro": "Aqui estão alguns livros que recomendo ou gostei de ler:"
+  },
+  "about": {
+    "title": "Sobre",
+    "description": "Sou estudante de Ciência da Computação na Universidade Estadual de Maringá. Atualmente trabalho como desenvolvedor Java em uma Fintech. Minhas principais áreas de interesse são Computação Gráfica e Machine Learning. No tempo livre gosto de aprender coisas novas, ler um bom livro, assistir séries, sair com amigos e conhecer pessoas interessantes. Também jogo alguns games quando tenho tempo livre nos finais de semana."
+  }
+}
