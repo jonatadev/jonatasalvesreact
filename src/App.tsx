@@ -1,6 +1,6 @@
 import React from 'react';
 import './i18n';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Blog from './components/Blog';
@@ -12,11 +12,11 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 
 const App: React.FC = () => (
-  <Router basename="/jonatasalves">
+  <Router>
     <CssBaseline />
     <Navbar />
     <Routes>
-      <Route path="/" element={<Navigate to="/about" replace />} />
+    <Route path="/" element={<About />} />
       <Route path="/about" element={<About />} />
   <Route path="/blog" element={<Blog />} />
       <Route path="/books" element={<Books />} />
