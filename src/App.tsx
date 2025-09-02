@@ -12,7 +12,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 
 const App: React.FC = () => (
-  <Router>
+  <Router basename="/jonatasalves/">
     <CssBaseline />
     <Navbar />
     <Routes>
