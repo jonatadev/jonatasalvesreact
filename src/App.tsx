@@ -31,7 +31,7 @@ function DocumentTitleUpdater() {
 }
 
 const App: React.FC = () => (
-  <Router basename="/jonatasalves/">
+  <Router basename={import.meta.env.BASE_URL}>
     <CssBaseline />
     <DocumentTitleUpdater />
     <Navbar />
