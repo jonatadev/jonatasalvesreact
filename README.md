@@ -105,5 +105,8 @@ npm install
 - [react-i18next](https://react.i18next.com)
 - [ESLint](https://eslint.org)
 
+
+---
+
 ---
 Desenvolvido por [jonatadev](https://github.com/jonatadev)

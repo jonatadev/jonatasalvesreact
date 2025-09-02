@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Books: React.FC = () => {
+const Bookworm: React.FC = () => {
   const { t } = useTranslation();
   const asset = (p: string) => `${import.meta.env.BASE_URL}${p.replace(/^\//, '')}`;
 
@@ -119,8 +119,14 @@ const Books: React.FC = () => {
     },
     {
       title: 'Where Good Ideas Come From: The Natural History of Innovation',
-  author: 'Steven Johnson',
-  image: '/books/where_good_ideas.jpg',
+      author: 'Steven Johnson',
+      image: '/books/where_good_ideas.jpg',
+      description: '',
+    },
+     {
+      title: 'Zero to One: Notes on Startups, or How to Build the Future',
+      author: 'Peter Thiel, Blake Masters',
+      image: '/books/zero_to_one.jpg',
       description: '',
     },
     
@@ -138,7 +144,7 @@ const Books: React.FC = () => {
       {/* Technical Books Section */}
       {books.length > 0 && (
         <React.Fragment>
-          <h2 style={{margin: '0 0 1rem', fontSize: '1.15rem', color: '#1976d2', textAlign: 'left'}}>{t('books.technical')}</h2>
+          <h2 style={{margin: '0 0 1rem', fontSize: '1.15rem', color: '#1976d2', textAlign: 'left'}}>Bookworm</h2>
           <p style={{
         fontSize: '1.2rem',
         color: '#333',
@@ -189,7 +195,7 @@ const Books: React.FC = () => {
       {/* Personal Growth Section */}
       {personalGrowthBooks.length > 0 && (
         <>
-      <h2 style={{margin: '2rem 0 1rem', fontSize: '1.15rem', color: '#1976d2', textAlign: 'left'}}>Desenvolvimento pessoal</h2>
+  <h2 style={{margin: '2rem 0 1rem', fontSize: '1.15rem', color: '#1976d2', textAlign: 'left'}}>Personal Development</h2>
           {personalGrowthBooks.map((book) => (
             <div key={book.title} style={{
               display: 'flex',
@@ -227,4 +233,4 @@ const Books: React.FC = () => {
   );
 };
 
-export default Books;
+export default Bookworm;

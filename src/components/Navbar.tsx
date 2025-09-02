@@ -20,7 +20,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 const sections = [
   { path: '/about', label: 'navbar.about' },
-  { path: '/articles', label: 'navbar.articles' },
+  { path: '/blog', label: 'navbar.blog' },
   { path: '/books', label: 'navbar.books' },
   { path: '/personal', label: 'navbar.personal' }
 ];
@@ -127,8 +127,10 @@ const Navbar: React.FC = () => {
             style={{
               transition: 'transform 0.2s',
             }}
-            onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
-            onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+              onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+              onFocus={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+              onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+              onBlur={(e) => (e.currentTarget.style.transform = 'scale(1)')}
           >
             <img
               src={linkedinIcon}
@@ -148,8 +150,10 @@ const Navbar: React.FC = () => {
             style={{
               transition: 'transform 0.2s',
             }}
-            onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
-            onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+              onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+              onFocus={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+              onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+              onBlur={(e) => (e.currentTarget.style.transform = 'scale(1)')}
           >
             <img
               src={githubIcon}
@@ -169,8 +173,10 @@ const Navbar: React.FC = () => {
             style={{
               transition: 'transform 0.2s',
             }}
-            onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
-            onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+              onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+              onFocus={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+              onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+              onBlur={(e) => (e.currentTarget.style.transform = 'scale(1)')}
           >
             <img
               src={twitterIcon}
@@ -190,8 +196,10 @@ const Navbar: React.FC = () => {
             style={{
               transition: 'transform 0.2s',
             }}
-            onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
-            onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+              onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+              onFocus={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+              onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+              onBlur={(e) => (e.currentTarget.style.transform = 'scale(1)')}
           >
             <img
               src={blueskyIcon}
@@ -211,8 +219,10 @@ const Navbar: React.FC = () => {
             style={{
               transition: 'transform 0.2s',
             }}
-            onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
-            onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+              onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+              onFocus={(e) => (e.currentTarget.style.transform = 'scale(1.2)')}
+              onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+              onBlur={(e) => (e.currentTarget.style.transform = 'scale(1)')}
           >
             <img
               src={instagramIcon}

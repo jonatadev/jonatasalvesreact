@@ -19,41 +19,41 @@ const Footer: React.FC = () => {
         <Typography variant="body2" sx={{ mb: 2, color: 'rgba(255,255,255,0.7)' }}>
           {t('footer.powered')}
         </Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mb: 1 }}>
+  <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mb: 1, position: 'relative', zIndex: 2 }}>
           <a href="https://www.linkedin.com/in/jonatasdev/" target="_blank" rel="noopener noreferrer" style={{ transition: 'transform 0.2s' }}
             onMouseOver={e => e.currentTarget.style.transform = 'scale(1.2)'}
             onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
             onFocus={e => e.currentTarget.style.transform = 'scale(1.2)'}
             onBlur={e => e.currentTarget.style.transform = 'scale(1)'}>
-            <img src={linkedinIcon} alt="LinkedIn" style={{ width: 24, height: 24, borderRadius: 6 }} />
+            <img src={linkedinIcon} alt="LinkedIn" style={{ width: 24, height: 24, borderRadius: 6, boxShadow: '0 2px 8px rgba(0,0,0,0.15)', background: 'rgba(255,255,255,0.05)', zIndex: 2 }} />
           </a>
           <a href="https://github.com/jonatadev" target="_blank" rel="noopener noreferrer" style={{ transition: 'transform 0.2s' }}
             onMouseOver={e => e.currentTarget.style.transform = 'scale(1.2)'}
             onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
             onFocus={e => e.currentTarget.style.transform = 'scale(1.2)'}
             onBlur={e => e.currentTarget.style.transform = 'scale(1)'}>
-            <img src={githubIcon} alt="GitHub" style={{ width: 24, height: 24, borderRadius: 6 }} />
+            <img src={githubIcon} alt="GitHub" style={{ width: 24, height: 24, borderRadius: 6, boxShadow: '0 2px 8px rgba(0,0,0,0.15)', background: 'rgba(255,255,255,0.05)', zIndex: 2 }} />
           </a>
           <a href="https://x.com/jonatadev" target="_blank" rel="noopener noreferrer" style={{ transition: 'transform 0.2s' }}
             onMouseOver={e => e.currentTarget.style.transform = 'scale(1.2)'}
             onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
             onFocus={e => e.currentTarget.style.transform = 'scale(1.2)'}
             onBlur={e => e.currentTarget.style.transform = 'scale(1)'}>
-            <img src={twitterIcon} alt="Twitter" style={{ width: 24, height: 24, borderRadius: 6 }} />
+            <img src={twitterIcon} alt="Twitter" style={{ width: 24, height: 24, borderRadius: 6, boxShadow: '0 2px 8px rgba(0,0,0,0.15)', background: 'rgba(255,255,255,0.05)', zIndex: 2 }} />
           </a>
           <a href="https://bsky.app/profile/jonatasdev.bsky.social" target="_blank" rel="noopener noreferrer" style={{ transition: 'transform 0.2s' }}
             onMouseOver={e => e.currentTarget.style.transform = 'scale(1.2)'}
             onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
             onFocus={e => e.currentTarget.style.transform = 'scale(1.2)'}
             onBlur={e => e.currentTarget.style.transform = 'scale(1)'}>
-            <img src={blueskyIcon} alt="Bluesky" style={{ width: 24, height: 24, borderRadius: 6 }} />
+            <img src={blueskyIcon} alt="Bluesky" style={{ width: 24, height: 24, borderRadius: 6, boxShadow: '0 2px 8px rgba(0,0,0,0.15)', background: 'rgba(255,255,255,0.05)', zIndex: 2 }} />
           </a>
           <a href="https://www.instagram.com/jonatasdev/?hl=pt-br" target="_blank" rel="noopener noreferrer" style={{ transition: 'transform 0.2s' }}
             onMouseOver={e => e.currentTarget.style.transform = 'scale(1.2)'}
             onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
             onFocus={e => e.currentTarget.style.transform = 'scale(1.2)'}
             onBlur={e => e.currentTarget.style.transform = 'scale(1)'}>
-            <img src={instagramIcon} alt="Instagram" style={{ width: 24, height: 24, borderRadius: 6 }} />
+            <img src={instagramIcon} alt="Instagram" style={{ width: 24, height: 24, borderRadius: 6, boxShadow: '0 2px 8px rgba(0,0,0,0.15)', background: 'rgba(255,255,255,0.05)', zIndex: 2 }} />
           </a>
         </Box>
         <Typography variant="caption" sx={{ color: 'rgba(255,255,255,0.5)' }}>
