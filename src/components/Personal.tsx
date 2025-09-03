@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import ImageGallery from 'react-image-gallery';
+import React, { useEffect, useState } from 'react';
+import ImageGallery, { type ReactImageGalleryItem } from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import './Personal.css';
 
@@ -81,6 +81,44 @@ const Personal: React.FC = () => {
 ];
   const [isMoviesExpanded, setIsMoviesExpanded] = useState(false);
   const [isShowsExpanded, setIsShowsExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  // Ref e navegação por teclado para a galeria
+  const galleryRef = React.useRef<any>(null);
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') {
+        galleryRef.current?.slideToIndex(galleryRef.current.getCurrentIndex() - 1);
+      } else if (e.key === 'ArrowRight') {
+        galleryRef.current?.slideToIndex(galleryRef.current.getCurrentIndex() + 1);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  // Comportamento responsivo: esconde thumbnails em telas pequenas
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 640px)');
+    const update = () => setIsMobile(mq.matches);
+    update();
+    if (mq.addEventListener) mq.addEventListener('change', update);
+    else mq.addListener(update);
+    return () => {
+      if (mq.removeEventListener) mq.removeEventListener('change', update);
+      else mq.removeListener(update);
+    };
+  }, []);
+
+  const renderItem = (item: ReactImageGalleryItem) => (
+    <img
+      className="image-gallery-image"
+      src={item.original as string}
+      alt={(item as any).originalAlt || 'Photo'}
+      loading="lazy"
+      sizes="(max-width: 640px) 100vw, (max-width: 1100px) 90vw, 1100px"
+      style={{ width: '100%', height: 'auto' }}
+    />
+  );
 
 
   return (
@@ -136,13 +174,21 @@ const Personal: React.FC = () => {
       <div style={{ marginBottom: '2rem' }}>
         <ImageGallery
           items={personalPhotos}
-          showThumbnails={true}
+          renderItem={renderItem}
+          showThumbnails={!isMobile}
           showFullscreenButton={true}
           showPlayButton={false}
           showNav={true}
           slideDuration={350}
           autoPlay={false}
+          lazyLoad={true}
+          infinite={true}
+          showBullets={true}
+          thumbnailPosition="bottom"
+          useBrowserFullscreen={true}
           additionalClass="personal-photo-gallery"
+          slideOnThumbnailOver={true}
+          ref={galleryRef}
         />
       </div>
     </section>

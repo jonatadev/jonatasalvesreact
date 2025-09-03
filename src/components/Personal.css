@@ -5,7 +5,7 @@
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
+  max-width: min(100%, 1100px);
   margin: 0 auto;
 }
 
@@ -73,4 +73,57 @@
 .movie-year, .show-year {
   font-size: 0.9rem;
   color: #666;
+}
+
+/* Responsive Image Gallery (react-image-gallery) */
+.personal-photo-gallery.image-gallery {
+  width: 100%;
+}
+
+.personal-photo-gallery .image-gallery-content,
+.personal-photo-gallery .image-gallery-slide-wrapper,
+.personal-photo-gallery .image-gallery-slides {
+  width: 100%;
+}
+
+.personal-photo-gallery .image-gallery-slide img,
+.personal-photo-gallery .image-gallery-image {
+  width: 100%;
+  height: auto;
+  max-height: 75vh;
+  object-fit: contain;
+}
+
+/* Use small viewport units when supported (iOS Safari friendly) */
+@supports (height: 1svh) {
+  .personal-photo-gallery .image-gallery-slide img,
+  .personal-photo-gallery .image-gallery-image {
+    max-height: 80svh;
+  }
+}
+
+.personal-photo-gallery .image-gallery-thumbnails {
+  padding: 8px 0;
+}
+
+.personal-photo-gallery .image-gallery-thumbnail {
+  width: 84px;
+}
+
+.personal-photo-gallery .image-gallery-thumbnails-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .personal-photo-gallery .image-gallery-thumbnail {
+    width: 64px;
+  }
+  .personal-photo-gallery .image-gallery-slide img,
+  .personal-photo-gallery .image-gallery-image {
+    max-height: 50vh;
+  }
+  /* Optionally hide thumbnails on small screens for more space */
+  .personal-photo-gallery .image-gallery-thumbnails-wrapper {
+    display: none;
+  }
 }
