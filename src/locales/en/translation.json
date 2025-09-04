@@ -3,7 +3,8 @@
     "about": "About",
   "blog": "Blog",
     "books": "Books",
-    "personal": "Personal"
+  "personal": "Personal",
+  "cv": "CV"
   },
   "footer": {
     "designed": "Designed and built with love by Jonatas Alves.",

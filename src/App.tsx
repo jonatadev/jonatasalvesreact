@@ -6,6 +6,7 @@ import About from './components/About';
 import Blog from './components/Blog';
 import Books from './components/Books';
 import Personal from './components/Personal';
+import Cv from './components/Cv';
 import Footer from './components/Footer';
 import './App.css';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -48,6 +49,7 @@ const App: React.FC = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/books" element={<Books />} />
         <Route path="/personal" element={<Personal />} />
+        <Route path="/cv" element={<Cv />} />
       </Routes>
       <Footer />
     </Router>

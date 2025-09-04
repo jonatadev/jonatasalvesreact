@@ -3,7 +3,8 @@
     "about": "Sobre",
     "articles": "Artigos",
     "books": "Livros",
-    "personal": "Pessoal"
+  "personal": "Pessoal",
+  "cv": "Currículo"
   },
   "footer": {
     "designed": "Desenvolvido com carinho por Jonatas Alves.",

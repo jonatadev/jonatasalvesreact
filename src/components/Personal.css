@@ -86,11 +86,7 @@
   width: 100%;
 }
 
-.personal-photo-gallery .image-gallery-slide img,
-.personal-photo-gallery .image-gallery-image {
-  width: 100%;
-  height: auto;
-  max-height: 75vh;
+.personal-photo-gallery .image-gallery-slide img {
   object-fit: contain;
 }
 
