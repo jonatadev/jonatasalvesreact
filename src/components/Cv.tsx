@@ -13,7 +13,10 @@ const Cv: React.FC = () => {
 
       {/* Seção de Certificações */}
       <div style={{ marginTop: "40px", width: "100%", maxWidth: "600px" }}>
-  <h2 style={{ fontSize: "1.3rem", marginBottom: "20px", fontWeight: 700 }}>Certifications</h2>
+        <h2 style={{ fontSize: "1.3rem", marginBottom: "20px", fontWeight: 700 }}>Certifications</h2>
+  <p style={{ marginBottom: "24px", color: "#444", fontSize: "1rem", maxWidth: "520px", textAlign: "justify" }}>
+          The AWS Certified Solutions Architect - Associate (SAA-C03) exam is intended for individuals who perform a solutions architect role. The exam validates a candidate’s ability to design solutions based on the AWS Well-Architected Framework.
+        </p>
         <div style={{ display: "flex", alignItems: "center", gap: "24px", flexWrap: "wrap" }}>
           <a href="https://www.credly.com/badges/01462fd8-9d7a-4203-b3ab-37659b442086/public_url" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", textDecoration: "none", color: "inherit", background: "#f8f8f8", borderRadius: "8px", boxShadow: "0 2px 8px rgba(0,0,0,0.07)", padding: "12px 18px", minWidth: "260px" }}>
             <img src="/cv/solutions_architect.png" alt="AWS Solutions Architect Associate" style={{ width: 64, height: 64, objectFit: "contain", marginRight: "18px", borderRadius: "6px", border: "1px solid #eee" }} />
